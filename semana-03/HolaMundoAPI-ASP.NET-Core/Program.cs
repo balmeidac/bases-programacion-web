@@ -1,4 +1,13 @@
-
+/*
+ * Project: HolaMundoAPI
+ * Author: Byron Almeida Coello
+ * Institution: Universidad Técnica Estatal de Quevedo (UTEQ)
+ * Career: Ingeniería en Sistemas de Información
+ * Course: Bases de la Programación Web
+ * Framework: ASP.NET Core Web API (.NET 10)
+ * Description: API REST básica que devuelve un mensaje Hola Mundo.
+ */
+ 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
