@@ -11,7 +11,7 @@
 
 ## 📋 Acerca del repositorio
 
-Este repositorio reúne el trabajo académico desarrollado durante la asignatura **Bases de la Programación Web**.
+Este repositorio reúne el trabajo académico desarrollado durante la asignatura **Bases de la Programación Web**, correspondiente a la carrera de Ingeniería en Sistemas de Información de la Universidad Técnica Estatal de Quevedo (UTEQ).
 
 Su propósito es organizar y documentar los recursos de aprendizaje, códigos fuente, ejercicios prácticos, evidencias y proyectos realizados durante el desarrollo de la asignatura.
 
@@ -42,18 +42,29 @@ Las tecnologías y herramientas se incorporan según los contenidos y actividade
 
 ## 📚 Organización del repositorio
 
-El contenido está distribuido en directorios correspondientes a las semanas de trabajo.
+El contenido está distribuido en directorios correspondientes a las semanas de trabajo. Selecciona una semana para consultar sus actividades, ejercicios, proyectos y evidencias.
 
 | Directorio | Contenido |
 |---|---|
-| `semana-01/` | Actividades y recursos de la semana 01 |
-| `semana-02/` | Actividades y recursos de la semana 02 |
-| `semana-03/` | Actividades y proyectos de la semana 03 |
-| `semana-04/` | Actividades y recursos de la semana 04 |
-| `semana-05/` | Actividades y recursos de la semana 05 |
-| `semana-06/` | Actividades y recursos de la semana 06 |
-| `...` | Semanas posteriores |
-| `semana-19/` | Actividades y recursos de la semana 19 |
+| [📂 semana-01](semana-01/) | Actividades y recursos de la semana 01 |
+| [📂 semana-02](semana-02/) | Actividades y recursos de la semana 02 |
+| [📂 semana-03](semana-03/) | Actividades y proyectos de la semana 03 |
+| [📂 semana-04](semana-04/) | Actividades y recursos de la semana 04 |
+| [📂 semana-05](semana-05/) | Actividades y recursos de la semana 05 |
+| [📂 semana-06](semana-06/) | Actividades y recursos de la semana 06 |
+| [📂 semana-07](semana-07/) | Actividades y recursos de la semana 07 |
+| [📂 semana-08](semana-08/) | Actividades y recursos de la semana 08 |
+| [📂 semana-09](semana-09/) | Actividades y recursos de la semana 09 |
+| [📂 semana-10](semana-10/) | Actividades y recursos de la semana 10 |
+| [📂 semana-11](semana-11/) | Actividades y recursos de la semana 11 |
+| [📂 semana-12](semana-12/) | Actividades y recursos de la semana 12 |
+| [📂 semana-13](semana-13/) | Actividades y recursos de la semana 13 |
+| [📂 semana-14](semana-14/) | Actividades y recursos de la semana 14 |
+| [📂 semana-15](semana-15/) | Actividades y recursos de la semana 15 |
+| [📂 semana-16](semana-16/) | Actividades y recursos de la semana 16 |
+| [📂 semana-17](semana-17/) | Actividades y recursos de la semana 17 |
+| [📂 semana-18](semana-18/) | Actividades y recursos de la semana 18 |
+| [📂 semana-19](semana-19/) | Actividades y recursos de la semana 19 |
 
 Cada directorio puede contener documentos, ejercicios, código fuente, proyectos y evidencias correspondientes a su respectiva semana.
 
@@ -96,9 +107,11 @@ API REST desarrollada con C# y ASP.NET Core Web API, que implementa un endpoint 
 - Respuesta JSON.
 - Pruebas con navegador y Postman.
 
-📂 **Ubicación:** `semana-03/HolaMundoAPI-ASP.NET-Core/`
+**Accesos al proyecto:**
 
-🔗 [Consultar proyecto HolaMundoAPI](semana-03/HolaMundoAPI-ASP.NET-Core/)
+- 📂 [Abrir carpeta del proyecto](semana-03/HolaMundoAPI-ASP.NET-Core/)
+- 📖 [Consultar documentación README](semana-03/HolaMundoAPI-ASP.NET-Core/README.md)
+- 💻 [Consultar código fuente Program.cs](semana-03/HolaMundoAPI-ASP.NET-Core/Program.cs)
 
 ## 💻 Clonar el repositorio
 
@@ -113,6 +126,8 @@ Accede al directorio:
 ```bash
 cd bases-programacion-web
 ```
+
+Para consultar las actividades y proyectos, ingresa en la carpeta de la semana correspondiente.
 
 ## 🔄 Control de versiones
 
