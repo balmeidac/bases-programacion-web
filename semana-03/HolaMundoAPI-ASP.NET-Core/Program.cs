@@ -1,5 +1,5 @@
 /*
- * Project: HolaMundoAPI
+ * Project: HolaMundoAPI-ASP.NET-Core
  * Author: Byron Almeida Coello
  * Institution: Universidad Técnica Estatal de Quevedo (UTEQ)
  * Career: Ingeniería en Sistemas de Información
