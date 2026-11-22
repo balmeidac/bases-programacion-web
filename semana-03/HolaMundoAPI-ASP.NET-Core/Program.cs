@@ -10,27 +10,18 @@
  
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Registra los controladores
+builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
- 
-// Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
 
-// Define the GET endpoint /api/hola.
-app.MapGet("/api/hola", () =>
-{
-    return Results.Ok(new
-    {
-        mensaje = "Hola Mundo",
-        lenguaje = "C#",
-        framework = "ASP.NET Core Web API"
-    });
-})
-.WithName("GetHola");
+// Conecta las rutas de los controladores
+app.MapControllers();
 
 app.Run();
