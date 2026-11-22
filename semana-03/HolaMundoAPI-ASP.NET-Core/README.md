@@ -59,10 +59,10 @@ La API expone una ruta de tipo `GET`, implementada mediante un controlador, que 
 |---|---|---|
 | `GET` | `/api/hola` | Retorna un mensaje de bienvenida y los datos tecnológicos de la aplicación. |
 
-**URL local (perfil HTTP predeterminado):**
+**URL local:**
 
 ```text
-http://localhost:5165/api/hola
+http://localhost:5000/api/hola
 ```
 
 ### 📦 Respuesta JSON
@@ -135,13 +135,13 @@ dotnet restore
 ### 5. Ejecutar la aplicación
 
 ```bash
-dotnet run
+dotnet run --no-launch-profile --urls "http://localhost:5000"
 ```
 
 Cuando el servidor se inicie correctamente, estará disponible en:
 
 ```text
-http://localhost:5165
+http://localhost:5000
 ```
 
 ### 6. Probar el endpoint
@@ -149,7 +149,7 @@ http://localhost:5165
 Abre el navegador o Postman y realiza una solicitud GET a:
 
 ```text
-http://localhost:5165/api/hola
+http://localhost:5000/api/hola
 ```
 
 La respuesta deberá mostrar el mensaje de bienvenida en formato JSON.
@@ -180,7 +180,7 @@ Creación del proyecto ASP.NET Core Web API desde la línea de comandos.
 
 ### 4. ▶️ Ejecución del servidor local
 
-Inicio de la aplicación ASP.NET Core y escucha en el puerto 5165.
+Inicio de la aplicación ASP.NET Core y escucha en el puerto 5000.
 
 ![Ejecución del servidor local](capturas/03-servidor-local.png)
 
