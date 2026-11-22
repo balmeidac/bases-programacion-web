@@ -1,6 +1,6 @@
 /*
  * Project: HolaMundoAPI-ASP.NET-Core
- * Author: Byron Almeida Coello
+ * Authors: Byron Almeida, Thalia Andrade y Yaritza Mora
  * Institution: Universidad Técnica Estatal de Quevedo (UTEQ)
  * Career: Ingeniería en Sistemas de Información
  * Course: Bases de la Programación Web

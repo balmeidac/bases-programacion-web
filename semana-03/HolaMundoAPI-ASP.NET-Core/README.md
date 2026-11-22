@@ -17,13 +17,13 @@
 
 **HolaMundoAPI** es una aplicación web que implementa un servicio REST mediante ASP.NET Core Web API. Su propósito es demostrar la configuración del entorno de desarrollo, la creación de un proyecto desde cero, la implementación de un endpoint HTTP y la verificación de su funcionamiento.
 
-La API expone una ruta de tipo `GET` que devuelve un mensaje de bienvenida en formato JSON, acompañado de información sobre el lenguaje y el framework utilizados.
+La API expone una ruta de tipo `GET`, implementada mediante un controlador, que devuelve un mensaje de bienvenida en formato JSON, acompañado de información sobre el lenguaje y el framework utilizados.
 
 ## 🎯 Objetivos
 
 - Configurar el entorno de desarrollo con C# y .NET.
 - Crear una API REST utilizando ASP.NET Core Web API.
-- Implementar un endpoint HTTP GET.
+- Implementar un endpoint HTTP GET mediante controladores.
 - Generar respuestas en formato JSON.
 - Ejecutar y probar el servicio en un servidor local.
 - Verificar las respuestas HTTP utilizando navegador y Postman.
@@ -36,6 +36,7 @@ La API expone una ruta de tipo `GET` que devuelve un mensaje de bienvenida en fo
 | **C#** | Lenguaje de programación |
 | **.NET 10 SDK** | Plataforma de desarrollo |
 | **ASP.NET Core Web API** | Framework para construir la API REST |
+| **Microsoft.AspNetCore.OpenApi** | Generación del documento OpenAPI en desarrollo |
 | **Visual Studio Code** | Editor de código fuente |
 | **C# Dev Kit** | Extensión para desarrollo con C# |
 | **Postman** | Pruebas de solicitudes HTTP |
@@ -44,12 +45,13 @@ La API expone una ruta de tipo `GET` que devuelve un mensaje de bienvenida en fo
 
 ## ⚙️ Características de la API
 
-- Implementación mediante Minimal API.
+- Implementación mediante controladores (`ControllerBase`).
 - Endpoint de tipo GET.
 - Respuesta estructurada en formato JSON.
 - Código HTTP `200 OK` cuando la solicitud se procesa correctamente.
 - Ejecución en un servidor local.
 - Configuración de entorno mediante ASP.NET Core.
+- Documento OpenAPI disponible en el entorno de desarrollo.
 
 ## 🔌 Endpoint disponible
 
@@ -57,10 +59,10 @@ La API expone una ruta de tipo `GET` que devuelve un mensaje de bienvenida en fo
 |---|---|---|
 | `GET` | `/api/hola` | Retorna un mensaje de bienvenida y los datos tecnológicos de la aplicación. |
 
-**URL local:**
+**URL local (perfil HTTP predeterminado):**
 
 ```text
-http://localhost:5000/api/hola
+http://localhost:5165/api/hola
 ```
 
 ### 📦 Respuesta JSON
@@ -83,9 +85,13 @@ HolaMundoAPI-ASP.NET-Core/
 ├── Properties/
 │   └── launchSettings.json
 │
+├── controllers/
+│   └── HolaController.cs
+│
 ├── capturas/
 │   ├── 01-estructura-proyecto.png
 │   ├── 02-codigo-fuente.png
+│   ├── 03-creacion-proyecto-cli.png
 │   ├── 03-servidor-local.png
 │   ├── 04-prueba-navegador.png
 │   └── 05-prueba-postman.png
@@ -129,13 +135,13 @@ dotnet restore
 ### 5. Ejecutar la aplicación
 
 ```bash
-dotnet run --no-launch-profile --urls "http://localhost:5000"
+dotnet run
 ```
 
 Cuando el servidor se inicie correctamente, estará disponible en:
 
 ```text
-http://localhost:5000
+http://localhost:5165
 ```
 
 ### 6. Probar el endpoint
@@ -143,7 +149,7 @@ http://localhost:5000
 Abre el navegador o Postman y realiza una solicitud GET a:
 
 ```text
-http://localhost:5000/api/hola
+http://localhost:5165/api/hola
 ```
 
 La respuesta deberá mostrar el mensaje de bienvenida en formato JSON.
@@ -160,25 +166,31 @@ Organización de carpetas y archivos del proyecto ASP.NET Core Web API en Visual
 
 ![Estructura del proyecto](capturas/01-estructura-proyecto.png)
 
-### 2. 💻 Código fuente – Program.cs
+### 2. 💻 Código fuente – HolaController.cs
 
-Implementación del endpoint `/api/hola` mediante Minimal API.
+Implementación del endpoint `/api/hola` mediante un controlador de ASP.NET Core Web API.
 
 ![Código fuente](capturas/02-codigo-fuente.png)
 
-### 3. ▶️ Ejecución del servidor local
+### 3. 🛠️ Creación del proyecto mediante CLI
 
-Inicio de la aplicación ASP.NET Core y escucha en el puerto 5000.
+Creación del proyecto ASP.NET Core Web API desde la línea de comandos.
+
+![Creación del proyecto mediante CLI](capturas/03-creacion-proyecto-cli.png)
+
+### 4. ▶️ Ejecución del servidor local
+
+Inicio de la aplicación ASP.NET Core y escucha en el puerto 5165.
 
 ![Ejecución del servidor local](capturas/03-servidor-local.png)
 
-### 4. 🌐 Prueba del endpoint en el navegador
+### 5. 🌐 Prueba del endpoint en el navegador
 
 Consulta de la ruta `/api/hola` y visualización de la respuesta JSON.
 
 ![Prueba en navegador](capturas/04-prueba-navegador.png)
 
-### 5. 📬 Prueba con Postman
+### 6. 📬 Prueba con Postman
 
 Solicitud GET, código de respuesta HTTP 200 OK y contenido JSON devuelto por la API.
 
